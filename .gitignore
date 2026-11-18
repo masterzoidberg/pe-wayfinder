@@ -1,4 +1,4 @@
-/reference/*.pdf
+/reference/
 /docs/*.pdf
 
 # GitHub Pages production output
@@ -24,7 +24,15 @@
 /*.zip
 /PE-Wayfinder-Expanded-Corpus/
 /corpus-release/
+/demo.html
+/data/demo-safe-manifest.js
+/docs/demo-guide.md
 /tests/demo-audit-tests.js
+/tests/browser-check.py
+/tests/corpus-release-tests.js
+/tests/reconcile-reference-map.py
+/tests/reference-map-check.py
+/tests/run-browser-suites.py
 /PE-Wayfinder-*-Plan.md
 /docs/chrome-pdf-search-*
 /docs/reference-map-*
