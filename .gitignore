@@ -1,0 +1,46 @@
+/reference/*.pdf
+/docs/*.pdf
+
+# GitHub Pages production output
+/_site/
+/build/
+/dist/
+
+# Local secrets and browser automation dependencies
+/.env
+/.env.*
+!/.env.example
+/.secrets/
+/credentials/
+/secrets/
+*.pem
+*.p12
+*.pfx
+*.key
+*credentials*.json
+/node_modules/
+
+# Audit, research, expanded-corpus and historical release material
+/*.zip
+/PE-Wayfinder-Expanded-Corpus/
+/corpus-release/
+/tests/demo-audit-tests.js
+/PE-Wayfinder-*-Plan.md
+/docs/chrome-pdf-search-*
+/docs/reference-map-*
+/docs/training-items-expanded.*
+/docs/original-pe-wayfinder-corpus-fact-check.txt
+/docs/reference-map-and-learning-gap-review.md
+/docs/mdm-reference-crosswalk.md
+/docs/retrieval-vs-knowledge.md
+/docs/search-language-map.md
+/docs/local-learner-pilot.md
+/docs/pilot-*
+/docs/public-release-checklist.md
+/docs/reference-map-release-readiness.md
+
+# Local browser exports and editor files
+*.pe-wayfinder-backup.json
+.DS_Store
+Thumbs.db
+tests/artifacts/

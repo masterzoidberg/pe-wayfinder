@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#18313a">
+  <title>PE Wayfinder - Retrieval fluency for MDM</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#app-main">Skip to main content</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Application navigation">
+      <div class="brand-lockup">
+        <div class="brand-mark" aria-hidden="true">PW</div>
+        <div>
+          <p class="brand-name">PE Wayfinder</p>
+          <p class="brand-subtitle">MDM retrieval fluency</p>
+        </div>
+      </div>
+      <div class="sidebar-rule"></div>
+      <nav class="primary-nav" aria-label="Primary">
+        <button class="nav-link is-active" data-view="home" type="button"><span aria-hidden="true">01</span> Home</button>
+        <button class="nav-link" data-view="training" type="button"><span aria-hidden="true">02</span> Training</button>
+        <button class="nav-link" data-view="progress" type="button"><span aria-hidden="true">03</span> Progress</button>
+        <button class="nav-link" data-view="map" type="button"><span aria-hidden="true">04</span> Reference map</button>
+        <button class="nav-link" data-view="miss" type="button"><span aria-hidden="true">05</span> Add this miss</button>
+      </nav>
+      <div class="sidebar-footer">
+        <p class="eyebrow">REFERENCE</p>
+        <p class="sidebar-note">NCEES PE Mechanical<br>Handbook 2.0</p>
+        <button class="nav-link settings-link" data-view="settings" type="button"><span aria-hidden="true">06</span> Settings</button>
+      </div>
+    </aside>
+
+    <div class="main-column">
+      <header class="topbar">
+        <p id="page-context" class="topbar-context">Workspace / Start here</p>
+        <div class="topbar-meta">
+          <span class="status-dot" aria-hidden="true"></span>
+          <span id="storage-status">Local only</span>
+          <span class="topbar-divider" aria-hidden="true"></span>
+          <span>Spec Oct 2025</span>
+        </div>
+      </header>
+      <div id="app-alert" class="app-alert" role="status" aria-live="polite" hidden></div>
+      <main id="app-main" tabindex="-1"></main>
+    </div>
+  </div>
+  <noscript><div class="noscript-message">PE Wayfinder needs JavaScript enabled to run its local training loop.</div></noscript>
+  <script src="core.js"></script>
+  <script src="data/training-items.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
